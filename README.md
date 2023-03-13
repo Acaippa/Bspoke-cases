@@ -58,7 +58,7 @@ Not being quite familiar with sematic elements in HTML made this case quite a ch
         <h1>Lorem Ipsum</h1>
 
     <figure>
-        <img src="https://bit.ly/3ftgXAt" alt="Lorem Ipsum" width="100%">
+        <img src="https://bit.ly/3ftgXAt" alt="Lorem Ipsum">
         <figcaption>Lorem Ipsum</figcaption>
     </figure>
 
