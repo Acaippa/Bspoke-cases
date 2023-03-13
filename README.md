@@ -1,5 +1,5 @@
 # Bspoke-cases
-This Repo is deficated to showcase my solutions and thought process for multiple cases.
+This Repo is dedicated to showcase my solutions and thought process for multiple cases.
 
 
 # Case 1
