@@ -90,8 +90,10 @@ Using ```Ctrl + F``` and searching for "Details" i found the ```<details>``` and
 Write a function that removes all items that are not numbers from the array. The function should modify the existing array, not create a new one.
 For example, if the input array contains values ``[1, 'a', 'b', 2]``, after processing, the array will contain only values ``[1, 2]``.
 
+Example:
+
 ```javascript
-examplefunction filterNumbersFromArray(arr) {
+function filterNumbersFromArray(arr) {
   // Write the code that goes here
 }
 var arr = [1, 'a', 'b', 2];
