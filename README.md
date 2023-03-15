@@ -41,6 +41,9 @@ Example:
   </div>
 </body>
 </html>
+
+!!  TODO !! ADD GIF
+
 ```
 ## Solution
 Not being quite familiar with sematic elements in HTML made this case quite a challenge. I felt that i had quite a good understanding after reading up about them and i quickly understood that they helped the developer understand what role the element played in the document, instead of the dreaded chain of divs with a multitude of confusing classes. 
