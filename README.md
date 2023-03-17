@@ -162,4 +162,4 @@ This lead to my final solution:
 ```
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
 
-https://raw.githubusercontent.com/Acaippa/Bspoke-cases/main/code/Answer%20%232.html?token=GHSAT0AAAAAAB6LKSA52E6DSGHLR4KX3XDIZAUWDRA
+https://github.com/Acaippa/Bspoke-cases/blob/main/code/Answer%20%232.html#:~:text=lines%20(27%20sloc,%3C/html%3E
