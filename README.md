@@ -122,8 +122,8 @@ Nevertheless, this did not work due to the length of the Array changing as the l
 <br>
 <img src='https://user-images.githubusercontent.com/106773288/225982246-f8e7b9b9-51a6-4988-8a83-6c47a0b3ad70.png' width='50%'>
 <br>
-<img src='https://user-images.githubusercontent.com/106773288/225975266-af901cb8-9d41-446c-84d6-00c5938b3b05.png' width='50%'>
-<br>The function notices that the value is a string and removes it. This causes the current index to land on the next item in the Array before the loop actually moves onto the next element in the Array. Causing the function to skip over the element.<br>
-<img src='https://user-images.githubusercontent.com/106773288/225975343-00f73634-46e9-4e84-8606-e00b9e6aa198.png' width='50%'>
+<img src='https://user-images.githubusercontent.com/106773288/225982473-0637def2-d798-4369-b4f0-bc779517f5a5.png' width='50%'>
+<br>The function notices that the value is a string and removes it. However, it does not notice that the item at the same index in the newly modified Array is a string before it increments onto the next element. Thereby skipping a string.<br>
+<img src='https://user-images.githubusercontent.com/106773288/225982578-3045bb1f-9ba3-4c8a-ae6f-1d2fdbfecd0f.png' width='50%'>
 
 
