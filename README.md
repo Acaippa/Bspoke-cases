@@ -106,3 +106,13 @@ filterNumbersFromArray(arr);
 for (var i = 0; i < arr.length; i++)
   console.log(arr[i]);
  ```
+## Solution
+In the beginning i thought i could just loop though the Array and use the ```splice``` function to remove items from the Array by modifying the Array itself. 
+```JS
+function filterNumbersFromArray(arr) {
+  arr.forEach((item) => {
+    if (typeof item == 'string'){
+      arr.splice(indexOf(item), 1)
+    }
+  })
+```
