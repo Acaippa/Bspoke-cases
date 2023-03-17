@@ -163,11 +163,8 @@ This lead to my final solution:
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
 # Case 3
 This web page displays a list of baby names.
-
 At the moment it does not use space efficiently.
-
 Write CSS so that the baby-names is a Flexbox and configure it's properties so that the items are displayed vertically.
-
 They should wrap and be centered both horizontally.
 
 Example:
