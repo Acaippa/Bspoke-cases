@@ -186,4 +186,28 @@ Example:
   </body>
 </html>
  ```
-I wasnt really sure as to how to solve this one. After selecting ```#baby-names``` and setting the display and direction to flex and collumn, i felt stuck. So after looking around, i found [This](https://stackoverflow.com/questions/45442906/get-divs-to-wrap-horizontally#:~:text=ul%20%7B%0A%20%20display%3A%20flex%3B%0A%20%20height%3A%20100vh%3B%0A%20%20flex%2Ddirection%3A%20column%3B%0A%20%20align%2Ditems%3A%20flex%2Dstart%3B%0A%20%20align%2Dcontent%3A%20flex%2Dstart%3B%0A%20%20flex%2Dwrap%3A%20wrap%3B%0A%20%20list%2Dstyle%3A%20none%3B%0A%20%20padding%3A%200%3B%0A%7D) article showing that i was quite close, but i was missing a static height of ```100vh``` and ```flex-wrap: wrap;``` aswell as changing ```align-items``` and removing ```align-content``` to allow for centered items.
+I wasnt really sure as to how to solve this one. After selecting ```#baby-names``` and setting the display and direction to flex and collumn, i felt stuck. So after looking around, i found [This](https://stackoverflow.com/questions/45442906/get-divs-to-wrap-horizontally#:~:text=ul%20%7B%0A%20%20display%3A%20flex%3B%0A%20%20height%3A%20100vh%3B%0A%20%20flex%2Ddirection%3A%20column%3B%0A%20%20align%2Ditems%3A%20flex%2Dstart%3B%0A%20%20align%2Dcontent%3A%20flex%2Dstart%3B%0A%20%20flex%2Dwrap%3A%20wrap%3B%0A%20%20list%2Dstyle%3A%20none%3B%0A%20%20padding%3A%200%3B%0A%7D) article showing that i was quite close, but i was missing a static height of ```100vh``` and ```flex-wrap: wrap;``` aswell as changing ```align-items``` and removing ```align-content``` to allow for centered items. Leading to my solution:
+```HTML
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Baby Names</title>
+    <style>
+        #baby-names {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    </style>
+    </head>
+ <body>
+    <div id="baby-names">
+      <p>Stacy</p>
+      <p>John</p>
+      <p>Peter</p>
+   </div>
+  </body>
+</html>
+```
