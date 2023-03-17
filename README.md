@@ -143,20 +143,19 @@ This lead to my final solution:
                 let item = arr[i]
                 if (typeof item == "string"){
                     arr.splice(i, 1)
-                    i -= 1
+                    i -= 1 // Compensate for Array length change when using arr.splice()
                 }
             }
         }
 
-        var arr = [1, 'a', 'b', 2, 'c', 3, 4, 5, 'd']
+        var arr = [1, 'a', 'b', 2]
 
         filterNumbersFromArray(arr)
         // At this point, arr should have been modified in place
         // and contain only 1 and 2.
         for (var i = 0; i < arr.length; i++){
-            console.log(arr[i])
+            console.log(arr[i]) // -> [1, 2]
         }
-
     </script>
 </body>
 </html>
