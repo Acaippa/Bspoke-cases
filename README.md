@@ -161,5 +161,3 @@ This lead to my final solution:
 </html>
 ```
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
-
-https://github.com/Acaippa/Bspoke-cases/blob/2a2e7254705afbc7f501384c088c6d2450dad276/code/Answer%20%232.html#L1-L32
