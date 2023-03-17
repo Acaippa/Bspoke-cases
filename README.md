@@ -161,6 +161,4 @@ This lead to my final solution:
 </html>
 ```
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
-[<code 
-src='https://github.com/Acaippa/Bspoke-cases/blob/main/code/Answer%20%232.html'>
-</code>](https://github.com/Acaippa/Bspoke-cases/blob/main/code/Answer%20%232.html#:~:text=%3C!DOCTYPE%20html%3E,%3C/html%3E)
+https://github.com/Acaippa/Bspoke-cases/blob/main/code/Answer%20%232.html#:~:text=%3C!DOCTYPE%20html%3E,%3C/html%3E
