@@ -119,8 +119,11 @@ function filterNumbersFromArray(arr) {
 ```
 Nevertheless, this did not work due to the length of the Array changing as the loop checked the items of it making the loop skip some items.
 <img src='https://user-images.githubusercontent.com/106773288/225975056-9a8a5908-8236-4d2d-8955-8364e278abd8.png' width='50%'>
+<br>
 <img src='https://user-images.githubusercontent.com/106773288/225975180-5afd74a1-31e1-4a31-97a5-ec9468ccb2ac.png' width='50%'>
+<br>
 <img src='https://user-images.githubusercontent.com/106773288/225975266-af901cb8-9d41-446c-84d6-00c5938b3b05.png' width='50%'>
+<br>The function notices that the value is a string and removes it. This causes the current index to land on the next item in the Array before the loop actually moves onto the next element in the Array. Causing the function to skip over the element.<br>
 <img src='https://user-images.githubusercontent.com/106773288/225975343-00f73634-46e9-4e84-8606-e00b9e6aa198.png' width='50%'>
 
 
