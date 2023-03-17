@@ -126,4 +126,38 @@ Nevertheless, this did not work due to the length of the Array changing as the l
 <br>The function notices that the value is a string and removes it. However, it does not notice that the item at the same index in the newly modified Array is a string before it increments onto the next element. Thereby skipping a string.<br>
 <img src='https://user-images.githubusercontent.com/106773288/225982578-3045bb1f-9ba3-4c8a-ae6f-1d2fdbfecd0f.png' width='50%'>
 
+This lead to my final solution:
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filterNumbersFromArray(arr) {
+            for (let i = 0; i < arr.length; i++){
+                let item = arr[i]
+                if (typeof item == "string"){
+                    arr.splice(i, 1)
+                    i -= 1
+                }
+            }
+        }
 
+        var arr = [1, 'a', 'b', 2, 'c', 3, 4, 5, 'd']
+
+        filterNumbersFromArray(arr)
+        // At this point, arr should have been modified in place
+        // and contain only 1 and 2.
+        for (var i = 0; i < arr.length; i++){
+            console.log(arr[i])
+        }
+
+    </script>
+</body>
+</html>
+```
