@@ -161,3 +161,4 @@ This lead to my final solution:
 </html>
 ```
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
+# Case 3
