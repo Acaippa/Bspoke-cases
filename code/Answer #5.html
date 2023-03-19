@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 4</title>
+</head>
+<body>
+    <script>
+        
+        function generateNewFolderName(arr){
+            if (arr.includes("New Folder")){
+                let folderNumber = 2
+                while (arr.includes(`New Folder (${folderNumber})`) == true){ // As long as there is a folder with the current folderNumber, increment the folderNumber until the folderNumber isnt in any of the array elements.
+                    folderNumber += 1
+                }
+                return `New Folder (${folderNumber})`
+            } else {
+                return 'New Folder' // If 'New Folder' is not present, just return that.
+            }
+        }
+
+        const folderName = generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"]) // -> New Folder (2)
+        console.log(folderName)
+    </script>
+</body>
+</html>
