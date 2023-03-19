@@ -242,3 +242,45 @@ Which of the following statements are true for merging feature and master branch
   I was pretty sure this was possible. Nevertheless, i wanted to try it in practice using Sublime merge for a more visual representation. It works, however i think it looks a bit complicated and scary.
 
   ![image](https://user-images.githubusercontent.com/106773288/226183641-9611bd16-8651-4743-9ab5-39b2cd774def.png)
+
+# Assignment 5
+Complete the function generateNewFolderName that receives an array of folder names and returns a generated unique folder name using the following rules:
+
+If there is no folder with the name "New Folder" in the array, then "New Folder" is returned.
+If there is a folder with the name "New Folder" and there is no folder with the name "New Folder (2)", then "New Folder (2)" is returned ("New Folder (1)" is never used).
+The N value of "New Folder (N)" should be incremented by 1 until a unique folder name is found.
+
+For example, ```generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"])``` should return "New Folder (2)".
+
+## Solution
+I am proud to say that this was the first assignment i was able to finish without looking up anything :)
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 4</title>
+</head>
+<body>
+    <script>
+        
+        function generateNewFolderName(arr){
+            if (arr.includes("New Folder")){
+                let folderNumber = 2
+                while (arr.includes(`New Folder (${folderNumber})`) == true){ // As long as there is a folder with the current folderNumber, increment the folderNumber until the folderNumber isnt in any of the array elements.
+                    folderNumber += 1
+                }
+                return `New Folder (${folderNumber})`
+            } else {
+                return 'New Folder' // If 'New Folder' is not present, just return that.
+            }
+        }
+
+        const folderName = generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"]) // -> New Folder (2)
+        console.log(folderName)
+    </script>
+</body>
+</html>
+```
