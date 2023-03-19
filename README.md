@@ -2,7 +2,7 @@
 This Repo is dedicated to showcase my solutions and thought process for multiple cases.
 
 
-# Case 1
+# Assignment 1
 Update the website's HTML, without using JavaScript or CSS, to make use of semantic elements so that: 
 - The classless outer div element is replaced with a more appropriate element.
 - The divs with the image and caption classes are replaced with self-contained content elements.
@@ -89,7 +89,7 @@ Using ```Ctrl + F``` and searching for "Details" i found the ```<details>``` and
 </html>
 ```
 
-# Case 2
+# Assignment 2
 Write a function that removes all items that are not numbers from the array. The function should modify the existing array, not create a new one.
 For example, if the input array contains values ``[1, 'a', 'b', 2]``, after processing, the array will contain only values ``[1, 2]``.
 
@@ -161,7 +161,8 @@ This lead to my final solution:
 </html>
 ```
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
-# Case 3
+
+# Assignment 3
 This web page displays a list of baby names.
 At the moment it does not use space efficiently.
 Write CSS so that the baby-names is a Flexbox and configure it's properties so that the items are displayed vertically.
@@ -212,7 +213,7 @@ I wasnt really sure as to how to solve this one. After selecting ```#baby-names`
   </body>
 </html>
 ```
-# Case 4
+# Assignment 4
 Which of the following statements are true for merging feature and master branches? (Select all acceptable answers.)
 
 - [x] GIT ensures that conflicts never happen.
