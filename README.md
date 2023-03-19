@@ -212,3 +212,32 @@ I wasnt really sure as to how to solve this one. After selecting ```#baby-names`
   </body>
 </html>
 ```
+# Case 4
+Which of the following statements are true for merging feature and master branches? (Select all acceptable answers.)
+
+- [x] GIT ensures that conflicts never happen.
+
+  Whenever Git detects a conflict, it will try its best to work it out. However, at times the developer will need to change their code to avoid the conflict. [Source](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts#:~:text=Conflicts%20generally%20arise,resolve%20the%20conflict.)
+  <hr>
+- [x] A push command to the master branch can fail if the master branch was modified in the meantime.
+
+  If the push command conflicts with the modification, Git will prevent the push.
+  <hr>
+- [x] After merging, git-blame will list only one developer for every modified source code file.
+
+  According to [this](https://stackoverflow.com/questions/15769298/git-blame-correct-author-after-merge#:~:text=This%20causes%20problems%20with%20%22git%20blame%22%3A%20the%20merged%20lines%20appear%20to%20be%20committed%20by%20the%20developer%20that%20did%20the%20merge) Git-blame will show that the code was made by the developer who comitted the merge.
+  <hr>
+- [x] Before merging, we can sync changes from the master branch to the feature branch.
+
+  By checking out the master branch and merging it to the feature branch, before merging the feature branch back into the master branch we can sync the feature branch. [Source](https://stackoverflow.com/questions/16329776/how-to-keep-a-branch-synchronized-updated-with-master#:~:text=Yes%2C%20just%20do,a%20good%20place.)
+  <hr>
+- [x] Each developer can have their own local branches and commit changes to them. These branches are not visible to other developers until the developer publishes the changes.
+
+  By forking any public repository you can locally make any changes you like to it before sending a pull request to the original repository, asking them to implement your code to the actual product. [Source](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/#:~:text=so%20you%20can%20make,to%20review%20your%20changes.)
+
+  <hr>
+- [ ] The feature branch cannot be branched further.
+
+  I was pretty sure this was possible. Nevertheless, i wanted to try it in practice using Sublime merge for a more visual representation. It works, however i think it looks a bit complicated and scary.
+
+  ![image](https://user-images.githubusercontent.com/106773288/226183641-9611bd16-8651-4743-9ab5-39b2cd774def.png)
