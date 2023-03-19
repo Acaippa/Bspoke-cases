@@ -2,7 +2,7 @@
 This Repo is dedicated to showcase my solutions and thought process for multiple cases.
 
 
-# Case 1
+# Assignment 1
 Update the website's HTML, without using JavaScript or CSS, to make use of semantic elements so that: 
 - The classless outer div element is replaced with a more appropriate element.
 - The divs with the image and caption classes are replaced with self-contained content elements.
@@ -89,7 +89,7 @@ Using ```Ctrl + F``` and searching for "Details" i found the ```<details>``` and
 </html>
 ```
 
-# Case 2
+# Assignment 2
 Write a function that removes all items that are not numbers from the array. The function should modify the existing array, not create a new one.
 For example, if the input array contains values ``[1, 'a', 'b', 2]``, after processing, the array will contain only values ``[1, 2]``.
 
@@ -161,7 +161,8 @@ This lead to my final solution:
 </html>
 ```
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
-# Case 3
+
+# Assignment 3
 This web page displays a list of baby names.
 At the moment it does not use space efficiently.
 Write CSS so that the baby-names is a Flexbox and configure it's properties so that the items are displayed vertically.
@@ -210,5 +211,76 @@ I wasnt really sure as to how to solve this one. After selecting ```#baby-names`
       <p>Peter</p>
    </div>
   </body>
+</html>
+```
+# Assignment 4
+Which of the following statements are true for merging feature and master branches? (Select all acceptable answers.)
+
+- [x] GIT ensures that conflicts never happen.
+
+  Whenever Git detects a conflict, it will try its best to work it out. However, at times the developer will need to change their code to avoid the conflict. [Source](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts#:~:text=Conflicts%20generally%20arise,resolve%20the%20conflict.)
+  <hr>
+- [x] A push command to the master branch can fail if the master branch was modified in the meantime.
+
+  If the push command conflicts with the modification, Git will prevent the push.
+  <hr>
+- [x] After merging, git-blame will list only one developer for every modified source code file.
+
+  According to [this](https://stackoverflow.com/questions/15769298/git-blame-correct-author-after-merge#:~:text=This%20causes%20problems%20with%20%22git%20blame%22%3A%20the%20merged%20lines%20appear%20to%20be%20committed%20by%20the%20developer%20that%20did%20the%20merge) Git-blame will show that the code was made by the developer who comitted the merge.
+  <hr>
+- [x] Before merging, we can sync changes from the master branch to the feature branch.
+
+  By checking out the master branch and merging it to the feature branch, before merging the feature branch back into the master branch we can sync the feature branch. [Source](https://stackoverflow.com/questions/16329776/how-to-keep-a-branch-synchronized-updated-with-master#:~:text=Yes%2C%20just%20do,a%20good%20place.)
+  <hr>
+- [x] Each developer can have their own local branches and commit changes to them. These branches are not visible to other developers until the developer publishes the changes.
+
+  By forking any public repository you can locally make any changes you like to it before sending a pull request to the original repository, asking them to implement your code to the actual product. [Source](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/#:~:text=so%20you%20can%20make,to%20review%20your%20changes.)
+
+  <hr>
+- [ ] The feature branch cannot be branched further.
+
+  I was pretty sure this was possible. Nevertheless, i wanted to try it in practice using Sublime merge for a more visual representation. It works, however i think it looks a bit complicated and scary.
+
+  ![image](https://user-images.githubusercontent.com/106773288/226183641-9611bd16-8651-4743-9ab5-39b2cd774def.png)
+
+# Assignment 5
+Complete the function generateNewFolderName that receives an array of folder names and returns a generated unique folder name using the following rules:
+
+If there is no folder with the name "New Folder" in the array, then "New Folder" is returned.
+If there is a folder with the name "New Folder" and there is no folder with the name "New Folder (2)", then "New Folder (2)" is returned ("New Folder (1)" is never used).
+The N value of "New Folder (N)" should be incremented by 1 until a unique folder name is found.
+
+For example, ```generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"])``` should return "New Folder (2)".
+
+## Solution
+I am proud to say that this was the first assignment i was able to finish without looking up anything :)
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 4</title>
+</head>
+<body>
+    <script>
+        
+        function generateNewFolderName(arr){
+            if (arr.includes("New Folder")){
+                let folderNumber = 2
+                while (arr.includes(`New Folder (${folderNumber})`) == true){ // As long as there is a folder with the current folderNumber, increment the folderNumber until the folderNumber isnt in any of the array elements.
+                    folderNumber += 1
+                }
+                return `New Folder (${folderNumber})`
+            } else {
+                return 'New Folder' // If 'New Folder' is not present, just return that.
+            }
+        }
+
+        const folderName = generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"]) // -> New Folder (2)
+        console.log(folderName)
+    </script>
+</body>
 </html>
 ```
