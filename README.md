@@ -1,13 +1,22 @@
 # Bspoke-cases
-This Repo is dedicated to showcase my solutions and thought process for multiple cases.
+This Repo is dedicated to showcasing my solutions and thought process for multiple assignments.
 
+## Contents
+
+- [Assignment 1](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-1)
+- [Assignment 2](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-2)
+- [Assignment 3](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-3)
+- [Assignment 4](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-4)
+- [Assignment 5](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-5)
+- [Assignment 6](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-6)
+- [Assignment 7](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-7)
 
 # Assignment 1
-Update the website's HTML, without using JavaScript or CSS, to make use of semantic elements so that: 
-- The classless outer div element is replaced with a more appropriate element.
-- The divs with the image and caption classes are replaced with self-contained content elements.
-- The divs with the lorem-ipsum and description classes are replaced with elements, so that by default only the contents of the description element are shown.
-- When the contents of the description element are clicked, the visibility of the rest of the lorem-ipsum element is toggled.
+Update the website's HTML, without using JavaScript or CSS, to make use of semantic elements so that: 
+- The classless outer div element is replaced with a more appropriate element.
+- The divs with the image and caption classes are replaced with self-contained content elements.
+- The divs with the lorem-ipsum and description classes are replaced with elements, so that by default only the contents of the description element are shown.
+- When the contents of the description element are clicked, the visibility of the rest of the lorem-ipsum element is toggled.
 
 Example:
 ```HTML
@@ -28,14 +37,14 @@ Example:
     </div>
     <div class="lorem-ipsum">
       <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Curabitur vitae hendrerit mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Mauris lacinia scelerisque nibh nec gravida. 
-      Duis malesuada nec nibh sit amet pulvinar. 
-      Phasellus congue porttitor arcu, ut suscipit nibh aliquam vel. 
-      Nunc arcu lectus, egestas ut sem ac, euismod porttitor eros. 
-      Phasellus tincidunt consequat pharetra. Maecenas sodales purus at nulla finibus dapibus. 
-      Nullam varius at nisl vel euismod. Fusce aliquet ligula non tempor fermentum. 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Curabitur vitae hendrerit mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Mauris lacinia scelerisque nibh nec gravida. 
+      Duis malesuada nec nibh sit amet pulvinar. 
+      Phasellus congue porttitor arcu, ut suscipit nibh aliquam vel. 
+      Nunc arcu lectus, egestas ut sem ac, euismod porttitor eros. 
+      Phasellus tincidunt consequat pharetra. Maecenas sodales purus at nulla finibus dapibus. 
+      Nullam varius at nisl vel euismod. Fusce aliquet ligula non tempor fermentum. 
       Nam fermentum posuere mauris, quis aliquam nibh dictum sed.</p>
     </div>
   </div>
@@ -46,11 +55,11 @@ Example:
 
 ```
 ## Solution
-Not being quite familiar with sematic elements in HTML made this case quite a challenge. I felt that i had quite a good understanding after reading up about them and i quickly understood that they helped the developer understand what role the element played in the document, instead of the dreaded chain of divs with a multitude of confusing classes. 
+Not being quite familiar with sematic elements in HTML made this assignment quite a challenge. I felt that I had quite a good understanding after reading up about them and i quickly understood that they helped the developer understand what role the element played in the document, instead of the dreaded chain of divs with a multitude of confusing classes. 
 
-However, I didn't know that these elements had functionalities. Thats why the words "without using JavaScript or CSS" stumped me. I thought it was a typo at first, thinking it was impossible to toggle the visibility of content in HTML without them. But after seeing that the ```<figure>``` element had an actual effect on the contents inside, i knew that these elements had built in functionalities. After looking around some more, I came across a YouTube video leading to [this](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) resource, conveniently listing all HTML elements and their functions. 
+However, I didn't know that these elements had functionalities. That’s why the words "without using JavaScript or CSS" stumped me. I thought it was a typo at first, thinking it was impossible to toggle the visibility of content in HTML without them. But after seeing that the ```<figure>``` element had an actual effect on the contents inside, i knew that these elements had built in functionalities. After looking around some more, I came across a YouTube video leading to [this](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) resource, conveniently listing all HTML elements and their functions. 
 
-Using ```Ctrl + F``` and searching for "Details" i found the ```<details>``` and ```<summary>``` duo, who's description perfectly matched my usecase. Here i also found descriptions for the ```<main>``` and ```<article>``` elements which i also used in my answer, whos descriptions deepend my knowlege about them. This assignment has opened my eyes to more functionalities within HTML itself, and i will continue using them in projects to learn more about them. All this lead to my answer:
+Using ```Ctrl + F``` and searching for "Details" i found the ```<details>``` and ```<summary>``` duo, who's description perfectly matched my usecase. Here i also found descriptions for the ```<main>``` and ```<article>``` elements which i also used in my answer, whos descriptions deepend my knowlege about them. This assignment has opened my eyes to more functionalities within HTML itself, and i will continue using them in projects to learn more about them. All this led to my answer:
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -97,17 +106,17 @@ Example:
 
 ```javascript
 function filterNumbersFromArray(arr) {
-  // Write the code that goes here
+  // Write the code that goes here
 }
 var arr = [1, 'a', 'b', 2];
 filterNumbersFromArray(arr);
 // At this point, arr should have been modified in place
 // and contain only 1 and 2.
 for (var i = 0; i < arr.length; i++)
-  console.log(arr[i]);
+  console.log(arr[i]);
  ```
 ## Solution
-In the beginning i thought i could just loop though the Array and use the ```splice``` function to remove items from the Array by modifying the Array itself. 
+In the beginning I thought I could just loop though the Array and use the ```splice``` function to remove items from the Array by modifying the Array itself. 
 ```JS
 function filterNumbersFromArray(arr) {
   arr.forEach((item) => {
@@ -163,10 +172,10 @@ This lead to my final solution:
 By simply reducing ``i`` after removing an item from the Array we compensate for the length reduction of the Array and the function works correctly.
 
 # Assignment 3
-This web page displays a list of baby names.
+This web page displays a list of baby names.
 At the moment it does not use space efficiently.
-Write CSS so that the baby-names is a Flexbox and configure it's properties so that the items are displayed vertically.
-They should wrap and be centered both horizontally.
+Write CSS so that the baby-names is a Flexbox and configure it's properties so that the items are displayed vertically.
+They should wrap and be centered both horizontally.
 
 Example:
 ```HTML
@@ -188,7 +197,7 @@ Example:
 </html>
  ```
 ## Solution
-I wasnt really sure as to how to solve this one. After selecting ```#baby-names``` and after setting the ```display``` and ```direction``` to ```flex``` and ```column```, i felt stuck. So after looking around, i found [This](https://stackoverflow.com/questions/45442906/get-divs-to-wrap-horizontally#:~:text=ul%20%7B%0A%20%20display%3A%20flex%3B%0A%20%20height%3A%20100vh%3B%0A%20%20flex%2Ddirection%3A%20column%3B%0A%20%20align%2Ditems%3A%20flex%2Dstart%3B%0A%20%20align%2Dcontent%3A%20flex%2Dstart%3B%0A%20%20flex%2Dwrap%3A%20wrap%3B%0A%20%20list%2Dstyle%3A%20none%3B%0A%20%20padding%3A%200%3B%0A%7D) article showing that i was quite close, but i was missing a static height of ```100vh``` and ```flex-wrap: wrap;``` aswell as changing ```align-items``` and removing ```align-content``` to allow for centered items. Leading to my solution:
+I wasn’t sure as to how to solve this one. After selecting ```#baby-names``` and after setting the ```display``` and ```direction``` to ```flex``` and ```column```, i felt stuck. So after looking around, i found [This](https://stackoverflow.com/questions/45442906/get-divs-to-wrap-horizontally#:~:text=ul%20%7B%0A%20%20display%3A%20flex%3B%0A%20%20height%3A%20100vh%3B%0A%20%20flex%2Ddirection%3A%20column%3B%0A%20%20align%2Ditems%3A%20flex%2Dstart%3B%0A%20%20align%2Dcontent%3A%20flex%2Dstart%3B%0A%20%20flex%2Dwrap%3A%20wrap%3B%0A%20%20list%2Dstyle%3A%20none%3B%0A%20%20padding%3A%200%3B%0A%7D) article showing that I was quite close, but I was missing a static height of ```100vh``` and ```flex-wrap: wrap;``` as well as changing ```align-items``` and removing ```align-content``` to allow for centered items. Leading to my solution:
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -226,7 +235,7 @@ Which of the following statements are true for merging feature and master branch
   <hr>
 - [x] After merging, git-blame will list only one developer for every modified source code file.
 
-  According to [this](https://stackoverflow.com/questions/15769298/git-blame-correct-author-after-merge#:~:text=This%20causes%20problems%20with%20%22git%20blame%22%3A%20the%20merged%20lines%20appear%20to%20be%20committed%20by%20the%20developer%20that%20did%20the%20merge) Git-blame will show that the code was made by the developer who comitted the merge.
+  According to [this](https://stackoverflow.com/questions/15769298/git-blame-correct-author-after-merge#:~:text=This%20causes%20problems%20with%20%22git%20blame%22%3A%20the%20merged%20lines%20appear%20to%20be%20committed%20by%20the%20developer%20that%20did%20the%20merge) Git-blame will show that the code was made by the developer who committed the merge.
   <hr>
 - [x] Before merging, we can sync changes from the master branch to the feature branch.
 
@@ -234,23 +243,23 @@ Which of the following statements are true for merging feature and master branch
   <hr>
 - [x] Each developer can have their own local branches and commit changes to them. These branches are not visible to other developers until the developer publishes the changes.
 
-  By forking any public repository you can locally make any changes you like to it before sending a pull request to the original repository, asking them to implement your code to the actual product. [Source](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/#:~:text=so%20you%20can%20make,to%20review%20your%20changes.)
+  By forking any public repository, you can locally make any changes you like to it before sending a pull request to the original repository, asking them to implement your code to the actual product. [Source](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/#:~:text=so%20you%20can%20make,to%20review%20your%20changes.)
 
   <hr>
 - [ ] The feature branch cannot be branched further.
 
-  I was pretty sure this was possible. Nevertheless, i wanted to try it in practice using Sublime merge for a more visual representation. It works, however i think it looks a bit complicated and scary.
+  I was pretty sure this was possible. Nevertheless, I wanted to try it in practice using Sublime merge for a more visual representation. It works, however I think it looks a bit complicated and scary.
 
   ![image](https://user-images.githubusercontent.com/106773288/226183641-9611bd16-8651-4743-9ab5-39b2cd774def.png)
 
 # Assignment 5
-Complete the function generateNewFolderName that receives an array of folder names and returns a generated unique folder name using the following rules:
+Complete the function generateNewFolderName that receives an array of folder names and returns a generated unique folder name using the following rules:
 
-If there is no folder with the name "New Folder" in the array, then "New Folder" is returned.
-If there is a folder with the name "New Folder" and there is no folder with the name "New Folder (2)", then "New Folder (2)" is returned ("New Folder (1)" is never used).
+If there is no folder with the name "New Folder" in the array, then "New Folder" is returned.
+If there is a folder with the name "New Folder" and there is no folder with the name "New Folder (2)", then "New Folder (2)" is returned ("New Folder (1)" is never used).
 The N value of "New Folder (N)" should be incremented by 1 until a unique folder name is found.
 
-For example, ```generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"])``` should return "New Folder (2)".
+For example, ```generateNewFolderName(["New Folder", "New Folder (3)", "New Folder (4)"])``` should return "New Folder (2)".
 
 ## Solution
 I am proud to say that this was the first assignment i was able to finish without looking up anything :)
@@ -284,15 +293,15 @@ I am proud to say that this was the first assignment i was able to finish withou
 </body>
 </html>
 ```
-# Case 6
+# Assignment 6
 Complete this sequence of GIT commands (without specifying additional arguments). 
-They create a feature branch named matrix, insert the file matrix.cpp, and merge the modifications back to the master branch:
+They create a feature branch named matrix, insert the file matrix.cpp, and merge the modifications back to the master branch:
 
 My answers are incapsulated inside the `[]`'s
 
 Make a feature branch:
 
-  `git [ branch matrix ] matrix` [Source](https://www.atlassian.com/git/tutorials/using-branches/git-checkout#:~:text=When%20you%20want,git%20branch%20new_branch)
+  `git [ branch matrix ] matrix` [Source](https://www.atlassian.com/git/tutorials/using-branches/git-checkout#:~:text=When%20you%20want,git%20branch%20new_branch)
 
 Switch to the feature branch:
 
@@ -314,16 +323,16 @@ Join the feature and main branches:
 
 
   `git [ merge matrix ] matrix` [Source](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=git%C2%A0checkout%C2%A0main-,git%C2%A0merge%C2%A0new%2Dfeature,-git%C2%A0branch%C2%A0%2Dd)
-# Case 7
-Implement the find_all_hobbyists function that takes a hobby, and an object consisting of peoples names mapped to their respective hobbies. The function should return a Listcontaining the names of the people (in any order) that enjoy the hobby.
+# Assignment 7
+Implement the find_all_hobbyists function that takes a hobby, and an object consisting of peoples names mapped to their respective hobbies. The function should return a List containing the names of the people (in any order) that enjoy the hobby.
 
-For example, the following code should display the name 'Chad'.
+For example, the following code should display the name 'Chad'.
 
 ```PYTHON
-hobbies = {"Steve": ['Fashion', 'Piano', 'Reading'], "Patty": ['Drama', 'Magic', 'Pets'],"Chad": ['Puzzles', 'Pets', 'Yoga']}
+hobbies = {"Steve": ['Fashion', 'Piano', 'Reading'], "Patty": ['Drama', 'Magic', 'Pets'],"Chad": ['Puzzles', 'Pets', 'Yoga']}
 
 print(find_all_hobbyists('Yoga', hobbies));
-    
+    
 ```
 
 Example start:
@@ -333,11 +342,32 @@ def find_all_hobbyists(hobby, hobbies):
   return []
 
 if __name__ == "__main__":
-    hobbies = { 
-        "Steve": ['Fashion', 'Piano', 'Reading'],
-        "Patty": ['Drama', 'Magic', 'Pets'],
-        "Chad": ['Puzzles', 'Pets', 'Yoga']
-    }
+    hobbies = { 
+        "Steve": ['Fashion', 'Piano', 'Reading'],
+        "Patty": ['Drama', 'Magic', 'Pets'],
+        "Chad": ['Puzzles', 'Pets', 'Yoga']
+    }
     
 print(find_all_hobbyists('Yoga', hobbies));
 ```
+## Solution
+With python being my strongpoint, i was able to whip up a one liner for this one :)
+
+```PYTHON
+def find_all_hobbyists(hobby, hobbies):
+    # Loop through hobbies and add every name whos hobby-list has the supplied hobby in it.
+    return [ person for person in hobbies.keys() if hobby in hobbies[person] ]
+
+if __name__ == "__main__":
+    hobbies = { 
+        "Steve": ['Fashion', 'Piano', 'Reading'],
+        "Patty": ['Drama', 'Magic', 'Pets'],
+        "Chad": ['Puzzles', 'Pets', 'Yoga'],
+        "Nils": ['Programming', 'biking', 'Yoga'],
+    }
+    
+print(find_all_hobbyists('Yoga', hobbies)); # -> ['Chad', 'Nils']
+```
+
+# Conclusion
+I genuinely found these cases challenging and fun, a lot of them had me thinking and looking up things I didn’t know before.
