@@ -127,6 +127,7 @@ function filterNumbersFromArray(arr) {
 }
 ```
 Nevertheless, this did not work due to the length of the Array changing as the loop checked the items of it making the loop skip some items.
+
 <img src='https://user-images.githubusercontent.com/106773288/225982042-8b61db22-5012-4344-bd1d-3a6ef4e4f1c8.png' width='50%'>
 <br>
 <img src='https://user-images.githubusercontent.com/106773288/225982246-f8e7b9b9-51a6-4988-8a83-6c47a0b3ad70.png' width='50%'>
