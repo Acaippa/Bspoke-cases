@@ -284,3 +284,33 @@ I am proud to say that this was the first assignment i was able to finish withou
 </body>
 </html>
 ```
+# Case 6
+Complete this sequence of GIT commands (without specifying additional arguments). 
+They create a feature branch named matrix, insert the file matrix.cpp, and merge the modifications back to the master branch:
+
+My answers are incapsulated inside the `[]`'s
+
+Make a feature branch:
+
+  `git [ branch matrix ] matrix` [Source](https://www.atlassian.com/git/tutorials/using-branches/git-checkout#:~:text=When%20you%20want,git%20branch%20new_branch)
+
+Switch to the feature branch:
+
+  `git [ checkout ] matrix`
+
+1. Insert file matrix.cpp into the local directory
+
+2. Mark that file matrix.cpp has been inserted:
+
+3. git add matrix.cpp Commit any changes:
+
+4. git commit -m 'Added support for matrix'
+
+Switch to the main branch:
+
+  `git [ checkout ] master`
+
+Join the feature and main branches:
+
+
+  `git [ merge matrix ] matrix` [Source](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=git%C2%A0checkout%C2%A0main-,git%C2%A0merge%C2%A0new%2Dfeature,-git%C2%A0branch%C2%A0%2Dd)
