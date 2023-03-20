@@ -323,13 +323,14 @@ For example, the following code should display the name 'Chad'.
 hobbies = {"Steve": ['Fashion', 'Piano', 'Reading'], "Patty": ['Drama', 'Magic', 'Pets'],"Chad": ['Puzzles', 'Pets', 'Yoga']}
 
 print(find_all_hobbyists('Yoga', hobbies));
-    return [] 
+    
 ```
 
 Example start:
 
 ```PYTHON
 def find_all_hobbyists(hobby, hobbies):
+  return []
 
 if __name__ == "__main__":
     hobbies = { 
