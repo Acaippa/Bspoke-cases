@@ -314,3 +314,29 @@ Join the feature and main branches:
 
 
   `git [ merge matrix ] matrix` [Source](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=git%C2%A0checkout%C2%A0main-,git%C2%A0merge%C2%A0new%2Dfeature,-git%C2%A0branch%C2%A0%2Dd)
+# Case 7
+Implement the find_all_hobbyists function that takes a hobby, and an object consisting of peoples names mapped to their respective hobbies. The function should return a Listcontaining the names of the people (in any order) that enjoy the hobby.
+
+For example, the following code should display the name 'Chad'.
+
+```PYTHON
+hobbies = {"Steve": ['Fashion', 'Piano', 'Reading'], "Patty": ['Drama', 'Magic', 'Pets'],"Chad": ['Puzzles', 'Pets', 'Yoga']}
+
+print(find_all_hobbyists('Yoga', hobbies));
+    return [] 
+```
+
+Example start:
+
+```PYTHON
+def find_all_hobbyists(hobby, hobbies):
+
+if __name__ == "__main__":
+    hobbies = { 
+        "Steve": ['Fashion', 'Piano', 'Reading'],
+        "Patty": ['Drama', 'Magic', 'Pets'],
+        "Chad": ['Puzzles', 'Pets', 'Yoga']
+    }
+    
+print(find_all_hobbyists('Yoga', hobbies));
+```
