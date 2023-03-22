@@ -11,3 +11,4 @@ if __name__ == "__main__":
     }
     
 print(find_all_hobbyists('Yoga', hobbies)); # -> ['Chad', 'Nils']
+input() # Prevent the program from exiting right away when run on the console
