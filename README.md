@@ -1,6 +1,4 @@
 # Bspoke-cases
-This Repo is dedicated to showcasing my solutions and thought process for multiple assignments given to me.
-
 ## Contents
 
 - [Assignment 1](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-1)
