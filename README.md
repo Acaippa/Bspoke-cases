@@ -1,5 +1,6 @@
 # Bspoke cases
 The following content displays several assignments, as well as their answers. 
+
 Contents
 
 - [Assignment 1](https://github.com/Acaippa/Bspoke-cases/edit/main/README.md#assignment-1)
