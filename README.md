@@ -50,9 +50,6 @@ Example:
   </div>
 </body>
 </html>
-
-!!  TODO !! ADD GIF
-
 ```
 ## Solution
 Not being quite familiar with sematic elements in HTML made this assignment quite a challenge. I felt that I had quite a good understanding after reading up about them and i quickly understood that they helped the developer understand what role the element played in the document, instead of the dreaded chain of divs with a multitude of confusing classes. 
@@ -97,6 +94,9 @@ Using ```Ctrl + F``` and searching for "Details" i found the ```<details>``` and
 </body>
 </html>
 ```
+
+![case 1 gif](https://user-images.githubusercontent.com/106773288/226929272-cb735afe-633d-425d-a88f-cd963fcbf8be.gif)
+
 
 # Assignment 2
 Write a function that removes all items that are not numbers from the array. The function should modify the existing array, not create a new one.
@@ -197,6 +197,10 @@ Example:
   </body>
 </html>
  ```
+ 
+ ![case 3 gif](https://user-images.githubusercontent.com/106773288/226929944-82163d29-ad4e-425d-94e5-1791ffecbce0.gif)
+
+ 
 ## Solution
 I wasn’t sure as to how to solve this one. After selecting ```#baby-names``` and after setting the ```display``` and ```direction``` to ```flex``` and ```column```, i felt stuck. So after looking around, i found [This](https://stackoverflow.com/questions/45442906/get-divs-to-wrap-horizontally#:~:text=ul%20%7B%0A%20%20display%3A%20flex%3B%0A%20%20height%3A%20100vh%3B%0A%20%20flex%2Ddirection%3A%20column%3B%0A%20%20align%2Ditems%3A%20flex%2Dstart%3B%0A%20%20align%2Dcontent%3A%20flex%2Dstart%3B%0A%20%20flex%2Dwrap%3A%20wrap%3B%0A%20%20list%2Dstyle%3A%20none%3B%0A%20%20padding%3A%200%3B%0A%7D) article showing that I was quite close, but I was missing a static height of ```100vh``` and ```flex-wrap: wrap;``` as well as changing ```align-items``` and removing ```align-content``` to allow for centered items. Leading to my solution:
 ```HTML
@@ -368,6 +372,7 @@ if __name__ == "__main__":
     }
     
 print(find_all_hobbyists('Yoga', hobbies)); # -> ['Chad', 'Nils']
+input() # Prevent the program from exiting right away when run on the console
 ```
 
 # Conclusion
