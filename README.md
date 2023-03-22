@@ -1,5 +1,5 @@
 # Bspoke-cases
-This Repo is dedicated to showcasing my solutions and thought process for multiple assignments.
+This Repo is dedicated to showcasing my solutions and thought process for multiple assignments given to me.
 
 ## Contents
 
